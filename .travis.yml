@@ -4,4 +4,5 @@
   install:
     - make deps
   script:
-    - pytest
+    - make test
+    - make lint
