@@ -9,4 +9,4 @@
     - make test
     - make lint
     - make docker_build
-    - make docker push
+    - make docker_push
