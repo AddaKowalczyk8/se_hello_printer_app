@@ -1,1 +1,3 @@
-{}
+{
+  "test_ui.py::TestFormater": true
+}
