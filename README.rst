@@ -52,13 +52,13 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 - Monitoring  z Statuscake (see:https://www.statuscake.com/)
 
 - Badge z TravisCI:
-    https://travis-ci.org/AddaKowalczyk8/se_hello_printer_app.svg?branch=master
+    https://api.travis-ci.org/AddaKowalczyk8/se_hello_printer_app.svg?branch=master
 
 - Badge z Statuscake:
     https://app.statuscake.com/button/index.php?Track=oIcafpmold&Days=1&Design=1 - jeden dzień
     https://app.statuscake.com/button/index.php?Track=oIcafpmold&Days=30&Design=1 - 30 dni
 
-  
+
 
     ...
 
