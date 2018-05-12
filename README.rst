@@ -76,7 +76,8 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 .. image:: https://app.statuscake.com/button/index.php?Track=oIcafpmold&Days=30&Design=1
     :target: https://www.statuscake.com
 
-
+- Code Climate:
+URL: https://codeclimate.com/github/AddaKowalczyk8/se_hello_printer_app/badges
 
 Pomocnicze
 ==========
