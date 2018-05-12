@@ -1,7 +1,7 @@
 Simple Flask App
 ================
 
-Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć 
+Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć
 o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
 - Rozpocząnając pracę z projektem (wykorzystując virtualenv). Hermetyczne środowisko dla pojedyńczej aplikacji w python-ie:
@@ -15,7 +15,7 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
 - Uruchamianie applikacji:
 
-  :: 
+  ::
 
     # jako zwykły program
     python main.py
@@ -41,6 +41,22 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 - Integracja z TravisCI:
 
   ::
+    Dodanie do repozytorium pliku konfiguracyjnego .travis.yml dla projektu python (see:https://docs.travis-ci.com/user/languages/python/)
+
+- Instalacja pakietu do repozytorium (see:https://hub.docker.com)
+
+- Deployment do heroku z maszyny dev, z wykorzystaniem gunicorn (see:https://devcenter.heroku.com/articles/python-gunicorn)
+
+- Deployment do heroku z TravisCI (see:https://docs.travis-ci.com/user/deployment/heroku/)
+
+- Monitoring  z Statuscake (see:https://www.statuscake.com/)
+
+- Badge z TravisCI:
+    https://travis-ci.org/AddaKowalczyk8/se_hello_printer_app.svg?branch=master
+
+- Badge z Statuscake:
+    https://app.statuscake.com/button/index.php?Track=oIcafpmold&Days=1&Design=1 - jeden dzień
+    https://app.statuscake.com/button/index.php?Track=oIcafpmold&Days=30&Design=1 - 30 dni
 
     ...
 
@@ -56,10 +72,10 @@ Pomocnicze
     pip install -U pip
     pip install virtualenv
     pip install virtualenvwrapper
-  
+
 - Instalacja docker-a:
 
-  :: 
+  ::
 
     yum remove docker \
         docker-common \
