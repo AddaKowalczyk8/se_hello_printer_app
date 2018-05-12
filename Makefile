@@ -15,10 +15,10 @@ test:
 	PYTHONPATH=. py.test --ignore=test_ui
 
 test_cov:
-	PYTHONPATH=. py.test --verbose -s --cov=.
+	PYTHONPATH=. py.test --verbose -s --cov=. --ignore=test_ui
 
 test_xunit:
-	PYTHONPATH=. py.test -s --cov=. --junit-xml=test_results.xml
+	PYTHONPATH=. py.test -s --cov=. --junit-xml=test_results.xml --ignore=test_ui
 
 run:
 	python main.py
