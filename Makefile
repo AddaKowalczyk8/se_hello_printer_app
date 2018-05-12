@@ -17,22 +17,22 @@ run:
 	python main.py
 
 docker_build:
-	docker build -t $(SERVICE_NAME) .
+	docker build -t $(MY_DOCKER_NAME) .
 
 docker_run: docker_build
 	docker run \
 	--name $(SERVICE_NAME)-dev \
 	 -p 5000:5000 \
-	 -d $(SERVICE_NAME)
+	 -d $(MY_DOCKER_NAME)
 
 test_smoke:
 	curl --fail 127.0.0.1:5000
 
 USERNAME=addakowalczyk
-TAG=$(USERNAME)/$(SERVICE_NAME)
+TAG=$(USERNAME)/$(MY_DOCKER_NAME)
 
 docker_push: docker_build
 	@docker login --username $(USERNAME) --password $${DOCKER_PASSWORD}; \
-	docker tag $(SERVICE_NAME) $(TAG); \
+	docker tag $(MY_DOCKER_NAME) $(TAG); \
 	docker push $(TAG);\
 	docker logout;
