@@ -7,11 +7,18 @@ MY_DOCKER_NAME=$(SERVICE_NAME)
 deps:
 	pip install -r requirements.txt; \
 	pip install -r test_requirements.txt;
+
 lint:
 	flake8 hello_world test
 
 test:
 	PYTHONPATH=. py.test --ignore=test_ui
+
+test_cov:
+	PYTHONPATH=. py.test --verbose -s --cov=.
+
+test_xunit:
+	PYTHONPATH=. py.test -s --cov=. --junit-xml=test_results.xml
 
 run:
 	python main.py
