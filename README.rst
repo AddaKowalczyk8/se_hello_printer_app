@@ -6,6 +6,10 @@ Simple Flask App
 .. image:: https://app.statuscake.com/button/index.php?Track=oIcafpmold&Days=1&Design=5
     :target: https://www.statuscake.com
 
+.. image:: https://api.codeclimate.com/v1/badges/75441815f43e7878a05a/maintainability
+   :target: https://codeclimate.com/github/AddaKowalczyk8/se_hello_printer_app/maintainability
+   :alt: Maintainability
+
 Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć
 o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
@@ -72,9 +76,6 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 .. image:: https://app.statuscake.com/button/index.php?Track=oIcafpmold&Days=30&Design=1
     :target: https://www.statuscake.com
 
-
-
-    ...
 
 
 Pomocnicze
