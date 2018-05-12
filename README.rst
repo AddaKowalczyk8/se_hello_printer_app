@@ -58,6 +58,8 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
     https://app.statuscake.com/button/index.php?Track=oIcafpmold&Days=1&Design=1 - jeden dzień
     https://app.statuscake.com/button/index.php?Track=oIcafpmold&Days=30&Design=1 - 30 dni
 
+  
+
     ...
 
 
