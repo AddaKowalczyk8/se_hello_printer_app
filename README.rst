@@ -3,6 +3,8 @@ Simple Flask App
 .. image:: https://travis-ci.org/AddaKowalczyk8/se_hello_printer_app.svg?branch=master
     :target: https://travis-ci.org/AddaKowalczyk8/se_hello_printer_app
 
+    .. image:: https://app.statuscake.com/button/index.php?Track=oIcafpmold&Days=1&Design=1
+          :target: https://www.statuscake.com
 
 Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć
 o Continuous Integration, Continuous Delivery i Continuous Deployment.
@@ -54,8 +56,9 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
 - Monitoring  z Statuscake (see:https://www.statuscake.com/)
 
-- Badge z TravisCI:
-    https://api.travis-ci.org/AddaKowalczyk8/se_hello_printer_app.svg?branch=master
+- Badge z TravisCI: .. image:: https://travis-ci.org/AddaKowalczyk8/se_hello_printer_app.svg?branch=master
+    :target: https://travis-ci.org/AddaKowalczyk8/se_hello_printer_app
+    URL: https://api.travis-ci.org/AddaKowalczyk8/se_hello_printer_app.svg?branch=master
 
 - Badge z Statuscake:
     https://app.statuscake.com/button/index.php?Track=oIcafpmold&Days=1&Design=1 - jeden dzień
