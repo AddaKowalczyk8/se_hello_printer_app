@@ -1,5 +1,8 @@
 Simple Flask App
 ================
+.. image:: https://travis-ci.org/AddaKowalczyk8/se_hello_printer_app.svg?branch=master
+    :target: https://travis-ci.org/AddaKowalczyk8/se_hello_printer_app
+
 
 Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć
 o Continuous Integration, Continuous Delivery i Continuous Deployment.
