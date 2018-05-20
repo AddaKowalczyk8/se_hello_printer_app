@@ -1,7 +1,7 @@
 SERVICE_NAME=hello-world-printer
 MY_DOCKER_NAME=$(SERVICE_NAME)
 
-.PHONY: test
+.PHONY: test deps test-api
 .DEFAULT_GOAL := test
 
 deps:
@@ -20,8 +20,17 @@ test_cov:
 test_xunit:
 	PYTHONPATH=. py.test -s --cov=. --junit-xml=test_results.xml --ignore=test_ui
 
+test_codeclimate:
+	PYTHONPATH=. py.test -s --cov=.  --ignore=test_ui
+
+test-api:
+	python test-api/api_test.py
+
 run:
 	python main.py
+
+codeclimate:
+	codeclimate-test-reporter --file .coverage
 
 docker_build:
 	docker build -t $(MY_DOCKER_NAME) .

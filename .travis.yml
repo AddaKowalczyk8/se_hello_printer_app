@@ -8,12 +8,14 @@
   script:
     - make test
     - make test_xunit
+    - make test_codeclimate
     - make lint
     - make docker_build
     - make docker_run
-    - sleep 2; python test-api/api_test.py
+    - sleep 2; make test-api
   after_success:
     - make docker_push
+    - make codeclimate
   deploy:
     provider: heroku
     app: shielded-reef-85462

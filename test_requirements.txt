@@ -4,3 +4,5 @@ flake8
 pytest-cov
 requests
 jmespath
+coverage
+codeclimate-test-reporter
