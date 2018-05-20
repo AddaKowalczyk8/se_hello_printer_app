@@ -13,6 +13,7 @@
     - make docker_build
     - make docker_run
     - sleep 2; make test-api
+    - make test_ui
   after_success:
     - make docker_push
     - make codeclimate

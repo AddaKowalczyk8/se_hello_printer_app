@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Witaj świecie!</title>
+  <meta charset="utf-8">
+  <title>Hello World</title>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
 </head>
+
 <body>
-
-<h1>Witaj świecie!</h1>
-<a href="https://google.com/search?q=imiona%20slawnych%20ludzi">Znajdź
-imiona znanych ludzi</a>
-
+  <script type="text/javascript">
+    $(document).ready(function() {
+      console.log("ready!");
+      $.getJSON("/?output=json", function(data) {
+        console.log(data);
+        $('#imie').text(data['imie'])
+      })
+    });
+  </script>
+  <div>Cześć!
+    <p id='imie'></p>
+    <div>
+      <a href="https://google.com/search?q=imiona%20slawnych%20ludzi">Znajdź imiona</a>
 </body>
+
 </html>

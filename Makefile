@@ -1,7 +1,7 @@
 SERVICE_NAME=hello-world-printer
 MY_DOCKER_NAME=$(SERVICE_NAME)
 
-.PHONY: test deps test-api
+.PHONY: test deps test-api test_ui
 .DEFAULT_GOAL := test
 
 deps:
@@ -19,6 +19,9 @@ test_cov:
 
 test_xunit:
 	PYTHONPATH=. py.test -s --cov=. --junit-xml=test_results.xml --ignore=test_ui
+
+test_ui:
+	PYTHONPATH=. py.test -s --verbose test_ui/test_ui.py
 
 test_codeclimate:
 	PYTHONPATH=. py.test -s --cov=.  --ignore=test_ui
