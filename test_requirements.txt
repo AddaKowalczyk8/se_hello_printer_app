@@ -6,3 +6,4 @@ requests
 jmespath
 coverage
 codeclimate-test-reporter
+selenium
