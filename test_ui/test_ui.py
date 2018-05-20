@@ -4,6 +4,19 @@ import unittest
 import time
 import pytest
 
+SELENIUM_WEBDRIVERS = {
+    'default': {
+        'callable': webdriver.Chrome,
+        'args': (),
+        'kwargs': {},
+    },
+    'firefox': {
+        'callable': webdriver.Firefox,
+        'args': (),
+        'kwargs': {},
+    },
+}
+
 @pytest.mark.uitest
 class TestFormater(unittest.TestCase):
     def test_plain_lowercase(self):
