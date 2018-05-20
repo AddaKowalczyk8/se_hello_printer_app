@@ -1,7 +1,7 @@
 SERVICE_NAME=hello-world-printer
 MY_DOCKER_NAME=$(SERVICE_NAME)
 
-.PHONY: test deps test-api test_ui
+.PHONY: test deps test-api
 .DEFAULT_GOAL := test
 
 deps:
