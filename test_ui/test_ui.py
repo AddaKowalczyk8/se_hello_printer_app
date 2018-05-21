@@ -1,4 +1,5 @@
 from selenium import webdriver
+from pyvirtualdisplay import Display
 
 import unittest
 import time
@@ -7,6 +8,10 @@ import pytest
 @pytest.mark.uitest
 class TestFormater(unittest.TestCase):
     def test_plain_lowercase(self):
+
+# Add following 2 line before start the Chrome
+        display = Display(visible=0, size=(800, 800))
+        display.start()
         options = webdriver.ChromeOptions()
         #All the arguments added for chromium to work on selenium
         options.add_argument("--no-sandbox") #This make Chromium reachable
