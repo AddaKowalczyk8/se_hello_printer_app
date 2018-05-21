@@ -16,7 +16,6 @@
     - make test
     - make test_xunit
     - make test_cov
-    - make codeclimate
     - make lint
     - make docker_build
     - make docker_run
@@ -24,6 +23,7 @@
     - sleep 3; make test_ui
   after_success:
     - codecov
+    - make codeclimate
     - make docker_push
     - make codeclimate
   deploy:
