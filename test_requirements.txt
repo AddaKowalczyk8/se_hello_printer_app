@@ -4,6 +4,6 @@ flake8
 pytest-cov
 requests
 jmespath
-coverage
+coverage>=4.0,<4.4
 codeclimate-test-reporter
 selenium

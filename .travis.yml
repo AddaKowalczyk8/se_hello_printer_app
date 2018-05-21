@@ -15,13 +15,15 @@
   script:
     - make test
     - make test_xunit
-    - make test_codeclimate
+    - make test_cov
+    - make codeclimate
     - make lint
     - make docker_build
     - make docker_run
     - sleep 2; make test-api
     - sleep 3; make test_ui
   after_success:
+    - codecov
     - make docker_push
     - make codeclimate
   deploy:
