@@ -1,3 +1,6 @@
+  dist: trusty
+  addons:
+    chrome: stable
   language: python
   services:
     - docker
@@ -5,7 +8,8 @@
     - "2.7"
   install:
     - make deps
-  before_script:
+  before_install:
+    - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
   script:
     - make test
     - make test_xunit
@@ -14,7 +18,7 @@
     - make docker_build
     - make docker_run
     - sleep 2; make test-api
-    - sleep 3; xvfb-run --server-args="-screen 0 1024x768x24" make test_ui
+    - sleep 3; make test_ui
   after_success:
     - make codeclimate
     - make docker_push
