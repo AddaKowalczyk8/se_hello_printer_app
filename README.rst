@@ -10,6 +10,11 @@ Simple Flask App
    :target: https://codeclimate.com/github/AddaKowalczyk8/se_hello_printer_app/maintainability
    :alt: Maintainability
 
+.. image:: https://api.codeclimate.com/v1/badges/75441815f43e7878a05a/test_coverage
+   :target: https://codeclimate.com/github/AddaKowalczyk8/se_hello_printer_app/test_coverage
+   :alt: Test Coverage
+
+
 Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć
 o Continuous Integration, Continuous Delivery i Continuous Deployment.
 
@@ -77,6 +82,19 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
     :target: https://www.statuscake.com
 
 - Code Climate:
+Jakość kodu:
+
+.. image:: https://api.codeclimate.com/v1/badges/75441815f43e7878a05a/maintainability
+   :target: https://codeclimate.com/github/AddaKowalczyk8/se_hello_printer_app/maintainability
+   :alt: Maintainability
+
+Pokrycie kodu testami:
+
+.. image:: https://api.codeclimate.com/v1/badges/75441815f43e7878a05a/test_coverage
+   :target: https://codeclimate.com/github/AddaKowalczyk8/se_hello_printer_app/test_coverage
+   :alt: Test Coverage
+
+
 URL: https://codeclimate.com/github/AddaKowalczyk8/se_hello_printer_app/badges
 
 Pomocnicze

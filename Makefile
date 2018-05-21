@@ -23,9 +23,6 @@ test_xunit:
 test_ui:
 	PYTHONPATH=. py.test -s --verbose test_ui/test_ui.py
 
-test_codeclimate:
-	PYTHONPATH=. py.test -s --cov=.  --ignore=test_ui
-
 test-api:
 	python test-api/api_test.py
 
