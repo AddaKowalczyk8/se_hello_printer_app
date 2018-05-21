@@ -12,6 +12,9 @@
     - make deps
   before_install:
     - google-chrome-stable --headless  --no-sandbox --disable-gpu
+  before_script:
+    - wget http://chromedriver.storage.googleapis.com/2.38/chromedriver_linux64.zip
+    - unzip chromedriver_linux64.zip -d /home/travis/virtualenv/python2.7.14/bin/
   script:
     - make test
     - make test_xunit
