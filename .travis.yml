@@ -1,6 +1,8 @@
   dist: trusty
   addons:
-    chrome: stable
+    apt:
+      packages:
+        - google-chrome-stable
   language: python
   services:
     - docker
@@ -9,7 +11,7 @@
   install:
     - make deps
   before_install:
-    - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+    - google-chrome-stable --headless  --no-sandbox --disable-gpu
   script:
     - make test
     - make test_xunit
