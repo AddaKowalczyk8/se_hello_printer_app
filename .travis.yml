@@ -22,7 +22,6 @@
     - sleep 2; make test-api
     - sleep 3; make test_ui
   after_success:
-    - codecov
     - make codeclimate
     - make docker_push
     - make codeclimate

@@ -55,15 +55,15 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
 - Integracja z TravisCI:
 
   ::
-    Dodanie do repozytorium pliku konfiguracyjnego .travis.yml dla projektu python (see:https://docs.travis-ci.com/user/languages/python/)
+    Dodanie do repozytorium pliku konfiguracyjnego .travis.yml dla projektu python (see: https://docs.travis-ci.com/user/languages/python/)
 
-- Instalacja pakietu do repozytorium (see:https://hub.docker.com)
+- Instalacja pakietu do repozytorium (see: https://hub.docker.com)
 
-- Deployment do heroku z maszyny dev, z wykorzystaniem gunicorn (see:https://devcenter.heroku.com/articles/python-gunicorn)
+- Deployment do heroku z maszyny dev, z wykorzystaniem gunicorn (see: https://devcenter.heroku.com/articles/python-gunicorn)
 
-- Deployment do heroku z TravisCI (see:https://docs.travis-ci.com/user/deployment/heroku/)
+- Deployment do heroku z TravisCI (see: https://docs.travis-ci.com/user/deployment/heroku/)
 
-- Monitoring  z Statuscake (see:https://www.statuscake.com/)
+- Monitoring  z Statuscake (see: https://www.statuscake.com/)
 
 - Badge z TravisCI:
 
@@ -94,8 +94,6 @@ Pokrycie kodu testami:
    :target: https://codeclimate.com/github/AddaKowalczyk8/se_hello_printer_app/test_coverage
    :alt: Test Coverage
 
-
-URL: https://codeclimate.com/github/AddaKowalczyk8/se_hello_printer_app/badges
 
 Pomocnicze
 ==========
