@@ -44,6 +44,14 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
     PYTHONPATH=. py.test
     PYTHONPATH=. py.test  --verbose -s
 
+- Uruchamianie smoke testów:
+
+  ::
+
+    make test_smoke
+    make test_smoke_siege_local
+    make test_smoke_siege_heroku
+
 - Kontynuując pracę z projektem, aktywowanie hermetycznego środowiska dla aplikacji py:
 
   ::
