@@ -22,9 +22,9 @@
     - make lint
     - make docker_build
     - make docker_run
-    - sleep 2; make test_smoke
-    - sleep 2; make test-api
-    - sleep 3; make test_ui
+    - sleep 3; make test_smoke
+    - make test-api
+    - make test_ui
   after_success:
     - make codeclimate
     - make docker_push
