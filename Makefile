@@ -42,7 +42,7 @@ docker_run: docker_build
 	 -d $(MY_DOCKER_NAME)
 
 test_smoke:
-	curl --fail 127.0.0.1:5000
+	curl -s -o /dev/null -w "%{http_code}" --fail 127.0.0.1:5000
 
 test_smoke_siege_local:
 	siege -t30s c2 http://127.0.0.1:5000
